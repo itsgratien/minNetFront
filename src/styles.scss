@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Delius+Swash+Caps&display=swap');
+*{
+    font-family: 'Delius Swash Caps', cursive;
+    color: #000;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.auth{
+    display: flex;
+    justify-content: column;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    .auth-sign{
+        width: 25%;
+    }
+    .input-group{
+        input{
+            width: 100%;
+            height: 50px;
+            border: none;
+            border-bottom: 1px solid #ddd;
+            border-radius: 10px;
+            outline: none;
+            box-shadow: none;
+            padding: 10px;
+        }
+        input[type="submit"]{
+           background: #000;
+           color: #fff;
+           margin-top: 30px;
+           width: auto;
+           padding-left: 40px;
+           padding-right: 40px;
+           cursor: pointer;
+        }
+    }
+}
+.successMessage{
+    padding: 15px;
+    border: 1px solid green;
+    border-radius: 10px;
+    background: #00800030;
+    color: green;
+    margin-top: 30px;
+}
+.errorsDisp{
+    padding: 15px;
+    border: 1px solid #ff000040;
+    border-radius: 10px;
+    background: #f724bd14;
+    color: red;
+    margin-top: 30px;
+}

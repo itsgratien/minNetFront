@@ -1,0 +1,19 @@
+<div class="auth">
+    <div class="auth-sign">
+        <h2>Login -></h2>
+        <div class="auth-field">
+            <form (ngSubmit)="onSubmit(signinForm)" #signinForm="ngForm" [hidden]="submitted">
+                    <div class="input-group">
+                        <input type="email" placeholder="email" ngModel name="email" #email="ngModel" required>
+                    </div>
+                    <div class="input-group">
+                            <input type="password" placeholder="password" ngModel name="password" 
+                            #password="ngModel" required>
+                    </div>
+                    <div class="input-group">
+                            <input type="submit" value="login" [disabled]="!signinForm.form.valid">
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>

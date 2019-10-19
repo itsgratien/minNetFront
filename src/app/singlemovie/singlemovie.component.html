@@ -1,0 +1,35 @@
+<div class="single-movies" *ngIf="movie">
+    <div class="mv-img">
+        <img [src]="movie.image" alt="">
+    </div>
+    <div class="movie-desc">
+        <div class="item">
+            <h3>{{movie.title}}</h3>
+        </div>
+        <div class="item">This movie was directed by &nbsp; <strong>{{movie.director}}</strong></div>
+        <div class="item-list">
+            <div class="favorite">
+                <button type="buttom" class="btn"><i class="fa fa-calendar"></i></button>
+                <div class="text-small">released on {{movie.released}}</div>
+            </div>
+            <div class="favorite">
+                <button type="buttom" class="btn"><i class="fa fa-cubes"></i></button>
+                <div class="text-small"> {{movie.awards}} awards </div>
+            </div>
+            <div class="favorite">
+                <button type="buttom" class="btn" (click)="AddToFavorite(movie.movie_id)"><i
+                        class="fa fa-heart"></i></button>
+                <div class="text-small">Add to your favorite</div>
+            </div>
+        </div>
+        <div class="successMessage" *ngIf="message">
+            {{message}}
+        </div>
+        <div class="errorsDisp" *ngIf="errors">
+            {{ errors.error }}
+        </div>
+    </div>
+</div>
+<div *ngIf="error" class="single-movies">
+    <h2>{{error}}</h2>
+</div>

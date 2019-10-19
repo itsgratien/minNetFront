@@ -1,0 +1,15 @@
+<div class="movies">
+<div class="app-movies" *ngIf="movies">
+    <div class="movie-column" *ngFor="let movie of movies">
+       <a routerLink="/{{movie.slug}}">
+        <div class="movie-img">
+                <img [src]="movie.image" alt="">
+            </div>
+            <div class="movie-descr">
+                <h3>{{ movie.title }}</h3>
+                <small>{{ movie.released }}</small>
+            </div>
+       </a>
+    </div>
+</div>
+</div>
