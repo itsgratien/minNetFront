@@ -14,14 +14,12 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## REST API FOR THIS APP
+[minNetAPI](https://www.github.com/itsgracian/minNetAPI)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## screenshoots
 
-## Running end-to-end tests
+<img width="1440" alt="Screen Shot 2019-10-19 at 11 49 24" src="https://user-images.githubusercontent.com/27460888/67142967-c52a9900-f266-11e9-9766-c7c3a747320d.png">
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Author 
+[gracian](https://www.github.com/itsgracian)
